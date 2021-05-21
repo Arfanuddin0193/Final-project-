@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.terminal {
+    background-image:linear-gradient(to right,#e5e5e5,#fff);
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+}
+.console-container {
+  font-family: 'VT323', monospace;
+  font-size: 4em;
+  text-align: center;
+  align-items: center;
+  height: 200px;
+  width: 1080px;
+  display: block;
+  position: absolute;
+  color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 3rem;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
+
+@media screen and (max-width: 1024px){
+
+  .console-container {
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    width: 80vw;
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right:50px;
+    margin-left:50px;
+    padding-top: 0rem;
+  }
+}

@@ -1,0 +1,31 @@
+svg#freepik_stories-javascript-frameworks:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-javascript-frameworks.animated
+  #freepik--Windows--inject-336 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+svg#freepik_stories-javascript-frameworks.animated
+  #freepik--speech-bubbles--inject-336 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.desim{
+    width:50vw;
+    height:50vh;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+.icon-wrap svg {
+  width: calc(25% - 20px);
+  padding: 10px;
+}
+.icon-wrap-services {
+  margin-bottom: 50px;
+}
+@media (max-width: 740px) {
+  .icon-wrap svg {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 500px) {
+  .icon-wrap svg {
+    width: calc(100% - 20px);
+  }
+}
+
+.icon-design .anchor-part {
+  animation: move 2s linear infinite;
+}
+.icon-design .anchor-part--2 {
+  animation: move2 2s linear infinite;
+}
+.icon-design .pen-part {
+  transform-origin: 140px 180px;
+  animation: bounce2 2s ease-in-out infinite;
+}
+.icon-design .ruler-part {
+  transform-origin: 140px 180px;
+  animation: bounce 1s ease-in-out infinite;
+}
+.icon-design .circle-part {
+  transform-origin: 139.8px 167.8px;
+  animation: rotate 4s linear infinite;
+}
+.icon-design .cursor-part {
+  animation: bounceBFt2 2s ease-in-out infinite;
+}
+@keyframes move {
+  0%, 100% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(-1px, -1px);
+  }
+}
+@keyframes move2 {
+  0%, 100% {
+    transform: translate(-1px, -1px);
+  }
+  50% {
+    transform: translate(1px, 1px);
+  }
+}
+.icon-design .hover {
+  animation-play-state: paused;
+}
+.icon-design:hover .hover {
+  animation-play-state: running;
+}
+
+.icon-develop .gear-b {
+  animation: rotate-reverse 6s;
+}
+.icon-develop:hover .gear-s{
+  transform-origin: 60.38% 54%;
+  animation: rotate 12s linear infinite;
+  animation-duration: 6s;
+}
+.icon-develop #XMLID_87_,
+.icon-develop #XMLID_85_,
+.icon-develop #XMLID_83_ {
+  animation: twinkle 3s ease-in-out infinite;
+
+  transform-origin: 30.38% ;
+}
+.icon-develop #XMLID_85_ {
+  animation-delay: .4s;
+}
+.icon-develop #XMLID_83_ {
+  animation-delay: .6s;
+}
+.icon-develop .line-t,
+.icon-develop .line-m,
+.icon-develop .line-b {
+  animation: shrink 1.8s ease-in-out infinite;
+  transform-origin: 60.38% ;
+}
+.icon-develop .line-m {
+  animation-delay: .3s;
+
+}
+.icon-develop .line-b {
+  animation-delay: .6s;
+}
+.icon-develop .code-letter_o {
+  animation: typingO 3s linear infinite;
+}
+.icon-develop .code-letter_d {
+  animation: typingD 3s linear infinite;
+}
+.icon-develop .code-letter_e {
+  animation: typingE 3s linear infinite;
+}
+@keyframes typingE {
+  20.1%, 80% {
+    fill: transparent;
+  }
+  20%, 80.1% {
+    fill: #fff;
+  }
+}
+@keyframes typingD {
+  30.1%, 70% {
+    fill: transparent;
+  }
+  30%, 70.1% {
+    fill: #fff;
+  }
+}
+@keyframes typingO {
+  40.1%, 60% {
+    fill: transparent;
+  }
+  40%, 60.1% {
+    fill: #fff;
+  }
+}
+.icon-develop .hover {
+  animation-play-state: paused !important;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.icon-develop:hover .hover {
+  animation-play-state: running !important;
+}
+
+.icon-support .gear-s,
+.icon-support .gear-m {
+  transform-origin: 63.55% 13.9%;
+  animation: rotate 12s linear infinite;
+  animation-duration: 6s;
+}
+.icon-support .gear-b {
+  animation: rotate-reverse 6s;
+  transform-origin: 43.55% 67.222%;
+}
+.icon-support .clock {
+  transform-origin: 223.6px 132.8px;
+  animation: rotate 12s linear infinite;
+}
+.icon-support .hover {
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.icon-support:hover .hover {
+  animation-play-state: running;
+}
+
+
+@keyframes shift {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+}
+@keyframes shift2 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes twinkle {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  25%, 75% {
+    transform: scale(1.6);
+  }
+}
+@keyframes twinkle2 {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  25%, 75% {
+    transform: scale(1.07);
+  }
+}
+@keyframes twinkle3 {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  25%, 75% {
+    transform: scale(1.14);
+  }
+}
+@keyframes bubble-t {
+  26%, 80% {
+    transform: scale(0);
+  }
+  20%, 86% {
+    transform: scale(1);
+  }
+}
+@keyframes bubble-m {
+  36%, 70% {
+    transform: scale(0);
+  }
+  30%, 76% {
+    transform: scale(1);
+  }
+}
+@keyframes bubble-b {
+  46%, 60% {
+    transform: scale(0);
+  }
+  40%, 66% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  50% {
+    transform: rotate(-6deg);
+  }
+}
+@keyframes bounce2 {
+  50% {
+    transform: rotate(6deg);
+  }
+}
+@keyframes bounce3 {
+  50% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes bounceBF {
+  0%, 100% {
+    transform: rotate(1.6deg);
+  }
+  50% {
+    transform: rotate(-1.6deg);
+  }
+}
+@keyframes bounceBFt2 {
+  0%, 100% {
+    transform: rotate(4.6deg);
+  }
+  50% {
+    transform: rotate(-4.6deg);
+  }
+}
+@keyframes shrink {
+  50% {
+    transform: scaleX(0.3);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotate-reverse {
+  to {
+    transform: rotate(-1turn);
+  }
+}

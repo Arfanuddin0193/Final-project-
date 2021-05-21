@@ -1,0 +1,50 @@
+.header{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 20;
+    text-align: center;
+    width: 100vw;
+}
+
+.header-img{
+	width:45vh;
+    overflow: hidden;
+    margin-top: 26vh;
+}
+@keyframes yf{	
+
+	0%{ transform: rotate(0deg);
+    transform-origin: bottom left;}
+	50%{ transform: rotate(10deg);
+    transform-origin: bottom left;}
+	100%{ transform: rotate(0deg);
+    transform-origin: bottom left;}
+	
+}
+@keyframes rf{	
+
+	0%{ transform: rotate(0deg);
+    transform-origin: bottom left;}
+	50%{ transform: rotate(5deg);
+    transform-origin: bottom left;}
+	100%{ transform: rotate(0deg);
+    transform-origin: bottom left;}
+	
+}
+
+@media screen and (max-width: 1024px) {
+	.header-img{
+		width:45vh;
+		overflow: hidden;
+		margin-top: 26vh;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.header-img{
+		width:30vh;
+		overflow: hidden;
+		margin-top: 26vh;
+	}
+}

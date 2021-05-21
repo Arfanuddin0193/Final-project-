@@ -1,0 +1,87 @@
+.about-container{
+  width: 100vw;
+  overflow: hidden;
+  background-image: linear-gradient(#0a7d7d, #000000);
+}
+
+.upperGrid{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 20px;
+}
+.description{
+  width: 30vw;
+  margin: auto;
+}
+.gridContainer{
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 0;
+}
+.description p {
+  font-size: 20px;
+  line-height: 38px;
+  position: relative;
+  color: white;
+}
+
+.des{
+  width: 700px;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+}
+.majhkhan{
+  margin: auto;
+  padding: 100px;
+}
+.majhkhan img{
+  height: 50vh;
+}
+
+.aboutcontent{
+  width: 40vw;
+  padding: 20px;
+}
+
+
+.aboutcontent p{
+  color: #ebebeb;
+  font-size: 20px;
+  line-height: 30px;
+}
+.aboutcontent h2{
+  color: #ebebeb;
+  font-size: 80px;
+}
+@media screen and (max-width: 1000px) {
+  .upperGrid{
+    display: block;
+  }
+  .gridContainer{
+    display: block;
+  }
+  .description{
+    width: 80vw;
+    margin-top: 60px;
+  }
+  .description p{
+    line-height: normal;
+  }
+  .majhkhan{
+    margin-left: -20px;
+  }
+  .aboutcontent{
+    line-height: normal;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .majhkhan{
+    padding: 0px;
+  }
+}

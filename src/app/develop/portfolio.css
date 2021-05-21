@@ -1,0 +1,51 @@
+.portfolio{
+    margin-bottom: 10%;
+}
+
+.scroll{
+    height: auto;
+}
+
+.image-container{
+    height:320px;
+	width:370px;
+	position:relative;
+}
+.image-container p{
+    color: black;
+    position: absolute;
+    top: 40%;
+    font-size: 45px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.image-inner-container{
+    border:1px solid #0000000d;
+	height:250px;
+	overflow:hidden;
+    border-radius: 10px;
+}
+.image-inner-container:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: .5s;
+}
+.image-container img{
+    width:100%;
+	transform:translate;
+}
+.image-container img:hover{
+    transform: translateY(-100%);
+	transition:10s;
+	cursor:pointer;
+}
+
+.our-work{
+    margin-bottom: 2%;
+}
+
+.portfolio-card{
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
